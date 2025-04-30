@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-
+import mammoth from 'mammoth';
 const ATSScoreChecker = () => {
     // State hooks
     const [resume, setResume] = useState('');
@@ -70,15 +70,26 @@ Required Skills & Competencies:
 
         setLoading(true);
 
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            const text = e.target.result;
-            setResume(text);
-            setFileUploaded(true);
-            setLoading(false);
-        };
-
-        reader.readAsText(file);
+        if (file.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
+            const reader = new FileReader();
+            reader.onload = async (e) => {
+                const arrayBuffer = e.target.result;
+                const { value } = await mammoth.extractRawText({ arrayBuffer });
+                setResume(value);
+                setFileUploaded(true);
+                setLoading(false);
+            };
+            reader.readAsArrayBuffer(file);
+        } else {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const text = e.target.result;
+                setResume(text);
+                setFileUploaded(true);
+                setLoading(false);
+            };
+            reader.readAsText(file);
+        }
     };
 
     // Load sample job description
