@@ -199,7 +199,10 @@ Required Skills & Competencies:
             "Java", "Spring", "Spring Boot", "AWS", "Cloud", "Microservices",
             "Kubernetes", "Docker", "REST", "API", "Angular", "React",
             "CI/CD", "Jenkins", "Git", "GitHub", "SQL", "Oracle", "MySQL",
-            "PostgreSQL", "NoSQL", "MongoDB", "Agile", "Scrum"
+            "PostgreSQL", "NoSQL", "MongoDB", "Agile", "Scrum", "GraphQL", "DevOps",
+            "Hibernate", "Vue", "Azure", "GCP", "Full Stack", "front-end",
+            "version control", "cloud technologies", "java development",
+            "microservices architecture"
         ];
 
         const result = {};
@@ -225,11 +228,26 @@ Required Skills & Competencies:
             "AWS": 3,
             "Spring Boot": 2.5,
             "Spring": 2.5,
+            "Spring Framework": 2.5,
             "Microservices": 2.5,
+            "microservices architecture": 2.5,
             "Kubernetes": 2,
             "Docker": 2,
             "REST": 2,
-            "API": 2
+            "API": 2,
+            "Angular": 2,
+            "React": 2,
+            "Hibernate": 2,
+            "DevOps": 2,
+            "CI/CD": 2,
+            "Git": 1.5,
+            "version control": 1.5,
+            "PostgreSQL": 1.5,
+            "MySQL": 1.5,
+            "cloud technologies": 1.5,
+            "java development": 1.5,
+            "front-end": 1.5,
+            "Full Stack": 2
         };
 
         let matchedTotal = 0;
@@ -346,7 +364,8 @@ Required Skills & Competencies:
             }
         }
 
-        return Math.min(Math.round(finalScore), 100);
+        return Math.min(Math.round(finalScore), 95);
+
     };
 
     // Generate recommendations
