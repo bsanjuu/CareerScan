@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# CareerScan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ATS Score Checker for Contract Positions
 
-## Available Scripts
+![CareerScan Logo](assets/logo.png)
 
-In the project directory, you can run:
+CareerScan is a specialized ATS (Applicant Tracking System) score checker designed specifically for IT contractors to optimize their resumes for higher match rates with job descriptions. Unlike generic ATS checkers, CareerScan is calibrated for the contract job market, where different optimization strategies apply.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Contract-Optimized Scoring:** Uses specialized algorithms tailored for contract positions
+- **Real-time ATS Score Analysis:** Receive immediate feedback with a detailed breakdown
+- **Skill Match Analysis:** Identifies matched and missing skills from job descriptions
+- **Format & Structure Evaluation:** Detects ATS-unfriendly formatting issues
+- **Keyword Density Optimization:** Ensures optimal keyword frequency without overstuffing
+- **Smart Recommendations:** Provides actionable improvements to boost your score
+- **Interactive Visualizations:** Visual representation of your resume's performance
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14.0.0 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone the repository
+git clone https://github.com/bsanju/careerscan.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigate to the project directory
+cd careerscan
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install dependencies
+npm install
+# or
+yarn install
 
-### `npm run eject`
+# Start the development server
+npm start
+# or
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Visit `http://localhost:3000` in your browser to use the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Upload Your Resume**
+    - Supported formats: PDF, DOCX, DOC, TXT, RTF
+    - Max file size: 10MB
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Enter Job Description**
+    - Paste the job description you're targeting
+    - Or use one of our sample job descriptions for testing
 
-## Learn More
+3. **Analyze Your Resume**
+    - Click "Analyze Resume" to get your ATS score and detailed breakdown
+    - Enable "Contract-Optimized Scoring" for specialized contract position scoring
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Review Results**
+    - Overall Score: Your total ATS compatibility score
+    - ATS Issues: Format, searchability and content issues
+    - Missing Skills: Skills mentioned in the job description not found in your resume
+    - Matched Skills: Skills successfully detected in your resume
+    - Recommendations: Actionable steps to improve your score
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Implement Recommendations**
+    - Make the suggested changes to your resume
+    - Reupload to check your improved score
 
-### Code Splitting
+## Why CareerScan for Contractors?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Specialized for Contract Roles:** Most ATS checkers are designed for permanent positions, but contract roles have different priorities and keyword patterns
+- **Accurately Represents ATS Systems:** Based on real data from contract-specific ATS systems
+- **Higher Success Rate:** Our users report 80-90% match rates when applying for contract positions
+- **Time-Saving:** Optimize your resume quickly for each application without guesswork
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+We welcome contributions to CareerScan! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact & Support
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: support@careerscan.io
+- Website:  https://careers-scan.web.app
+- Issue Tracker: https://github.com/bsanjuu/careerscan/issues
