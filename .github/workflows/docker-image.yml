@@ -3,7 +3,7 @@ name: Build and Publish Docker Images (Frontend & Backend)
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
