@@ -4,9 +4,9 @@
   "description": "AI-powered ATS Score Checker Backend",
   "main": "server.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node server.js",
+    "build": "npm build",
+    "start": "npm start"
   },
   "dependencies": {
     "compromise": "^14.14.4",

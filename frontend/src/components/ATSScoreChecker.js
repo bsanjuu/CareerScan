@@ -23,7 +23,7 @@ const ATSScoreChecker = () => {
     // Backend API URL - Fixed for browser environment
     const API_BASE_URL = window.location.hostname === 'localhost'
         ? 'http://localhost:3001'
-        : 'https://your-backend-url.com';
+        : 'http://localhost:3001';
 
     const sampleJDs = {
         'java': `Job Title: Java Full Stack Developer
